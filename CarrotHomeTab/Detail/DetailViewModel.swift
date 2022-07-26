@@ -27,7 +27,7 @@ final class DetailViewModel {
     func fetch() {
         
         // api없어서 가짜데이터 만듦
-        DispatchQueue.global().asyncAfter(deadline: .now()+1.5) { [unowned self] in 
+        DispatchQueue.global().asyncAfter(deadline: .now()+0.3) { [unowned self] in 
             self.itemInfoDetails = ItemInfoDetails(user: User.mock, item: self.itemInfo, details: ItemExtraInfo.mock)
             
         }
